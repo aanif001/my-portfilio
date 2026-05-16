@@ -76,6 +76,19 @@
         .project-tech { color: #888; font-size: 0.9rem; }
         .project-content { padding: 1.5rem; }
         .project-content p { color: #aaa; line-height: 1.6; font-size: 1rem; }
+
+        .github-link {
+            display: inline-block;
+            margin-top: 1rem;
+            color: #87CEEB;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+        .github-link:hover {
+            color: white;
+            text-decoration: underline;
+        }
         
         @media (max-width: 768px) {
             .container { padding: 1rem; }
@@ -93,6 +106,18 @@
         <p class="subtitle">Real-world projects I've built</p>
 
         <div class="projects-grid">
+            <!-- Hybrid Movie Recommender System - NEW PROJECT -->
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>🎬 Hybrid Movie Recommender System</h3>
+                    <div class="project-tech">Python, ALS Matrix Factorization, TF-IDF, Streamlit, scikit-learn</div>
+                </div>
+                <div class="project-content">
+                    <p>Built a production-ready hybrid recommendation system combining ALS Matrix Factorization (collaborative filtering) with TF-IDF + Cosine Similarity (content-based filtering). Trained on MovieLens dataset (3,238 users, 21,509 movies, 0.72% matrix density). Features an interactive Streamlit dashboard with real-time personalized recommendations and tunable hybrid weight (α).</p>
+                    <a href="https://github.com/aanif001/MovieLens-Hybrid-RS" target="_blank" class="github-link">🔗 View on GitHub →</a>
+                </div>
+            </div>
+
             <div class="project-card">
                 <div class="project-header">
                     <h3>Multi-Modal AI System</h3>
